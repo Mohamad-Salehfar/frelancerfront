@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
+// این وحود نداره مشکل اینه
 
 const app = axios.create({
-  baseURL: BASE_URL,
+  baseURL: "http://localhost:5000/api",
   withCredentials: true,
 });
 
